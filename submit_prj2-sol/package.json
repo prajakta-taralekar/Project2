@@ -1,0 +1,25 @@
+{
+  "name": "prj2-sol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/",
+    "debug-test": "mocha --inspect-brk test/",
+    "syntax-check": "shopt -s globstar; for f in **/*.mjs; do node -c $f; done;"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cs544-js-utils": "file:../cs544-js-utils",
+    "mongodb": "^4.1.3",
+    "mongodb-memory-server": "^7.4.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2"
+  }
+}
